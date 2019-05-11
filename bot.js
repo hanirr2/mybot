@@ -86,17 +86,6 @@ client.on('message', message => {
 
 
 
-client.on('message', message => {
-    if (message.content.toLowerCase() === prefix + "قل لي احبك") {
-        if(!message.channel.guild) return message.channel.send("** هذا الامر للسيرفرات فقط ⛔  **");
-        message.channel.send("** تم ارسال رسالة في الخاص 📬 ** ")
-        let embed = new Discord.RichEmbed()
-        .setColor("RANDOM")
-        .setTitle("اي لوف يو")
-        .addField("<3",' انا احبك ')			    				     		    
-        message.author.sendEmbed(embed);
-    }
-});
 
 
 
